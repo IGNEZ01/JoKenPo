@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpo</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body id="body">
+    <main id="main">
+    <header id="header">
+        <h1>Jo Ken Po</h1>
+    </header>
+    <section id="choose">
+        <h2 id="uchoice">Faça sua escolha:</h2>
+        <div id="buttons">
+    <button onclick="jogar('0')"><img src="../assets/pedra.png" alt="Jo" /></button>
+    <button onclick="jogar('1')"><img src="../assets/papel.png" alt="Ken" /></button>
+    <button onclick="jogar('2')"><img src="../assets/tesoura.png" alt="Po" /></button>
+        </div>
+        <h2 id="pchoice">O computador escolheu:</h2>
+        <div id="comp">
+        <button id="cp"><img id="weaponcp" src="../assets/papel.png" alt="Ken"></button>
+    </div>
+        <p id="result">Inicie o jogo</p>
+    </section>
+    <section id="scoreboard">
+        <h3>Placar:</h3>
+        <div id="socres">
+            <p class="score">Você: <span id="pontosUsuario">0</span></p>
+            <p class="score">CPU: <span id="pontosCpu">0</span></p>
+            <p class="score">Empate: <span id="pontosEmpate">0</span></p>
+        </div>
+    <div id="button">
+        <button id="reset" onclick="zerar ()">Zerar</button>
+    </div>
+    </section>
+</main>
+    <footer>
+        <span id="footer">Programmed by: </span>Ignez
+    </footer>
+
+<!--<div id="follow"></div>-->
+</body>
+<script src="../javascript/jokenpo.js"></script>
+</html>
